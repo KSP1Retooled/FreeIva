@@ -40,7 +40,7 @@ namespace FreeIva
 #if Experimental
 		public GameObject KerbalWorldSpace;
 		public Collider KerbalWorldSpaceCollider;
-		public PhysicMaterial KerbalWorldSpacePhysics;
+		public PhysicsMaterial KerbalWorldSpacePhysics;
 		public Rigidbody KerbalWorldSpaceRigidbody;
 		public Renderer KerbalWorldSpaceRenderer;
 #endif
@@ -128,7 +128,7 @@ namespace FreeIva
 
 		void OnGUI()
 		{
-			GuiTutorial.Gui(GetInstanceID());
+			GuiTutorial.Gui((int)(GetEntityId().GetRawData() & 0xFFFFFFFFu));
 		}
 
 		public void Update()

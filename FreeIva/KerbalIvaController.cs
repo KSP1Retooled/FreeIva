@@ -58,8 +58,8 @@ namespace FreeIva
 			KerbalCollider.material.staticFriction = 0.0f;
 			KerbalCollider.material.dynamicFriction = 0.0f;
 			KerbalCollider.material.bounciness = 0.0f;
-			KerbalCollider.material.frictionCombine = PhysicMaterialCombine.Minimum;
-			KerbalCollider.material.bounceCombine = PhysicMaterialCombine.Minimum;
+			KerbalCollider.material.frictionCombine = PhysicsMaterialCombine.Minimum;
+			KerbalCollider.material.bounceCombine = PhysicsMaterialCombine.Minimum;
 			KerbalCollider.isTrigger = false;
 			KerbalCollider.radius = Settings.NoHelmetSize;
 			SetHeight(StandingHeight);

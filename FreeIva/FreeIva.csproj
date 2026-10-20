@@ -11,6 +11,7 @@
     <GenerateKSPAssemblyAttribute>true</GenerateKSPAssemblyAttribute>
     <GenerateKSPAssemblyDependencyAttributes>true</GenerateKSPAssemblyDependencyAttributes>
   </PropertyGroup>
+  
   <ItemGroup>
     <Publicize Include="Assembly-CSharp" />
   </ItemGroup>
@@ -21,6 +22,17 @@
     <Compile Include="..\FreeIva_Unity\Assets\Scripts\MeshCutter2.cs">
       <Link>MeshCutter2.cs</Link>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+      <Reference Include="netstandard">
+	  <HintPath>$(KSPBT_GameRoot)/KSP_x64_Data/Managed/netstandard.dll</HintPath>
+      <Private>False</Private>
+	</Reference>
+	
+	<Reference Include="mscorlib">
+	  <HintPath>$(KSPBT_GameRoot)/KSP_x64_Data/Managed/mscorlib.dll</HintPath>
+      <Private>False</Private>
+	</Reference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Publicizer">
